@@ -19,5 +19,5 @@ void main(){
 
 	float h = FragPos.y;
 
-	gl_FragColor = vec4(vec3(0.2, 0.8, 0.5)/max(5*h, 1), 1.);
+	gl_FragColor = vec4(vec3(0.2, 0.8, 0.5)/(mod(h, 0.1)*1/0.1), 1.);
 }
